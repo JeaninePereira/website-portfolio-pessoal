@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #E8E8E8;
+    color: #171717;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: sticky;
+    top: 0;
+    background-color: #E8E8E8;
+    z-index: 8;
+}
+/*-- Início do menu --*/
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar img {
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;   
+}
+
+.nav-item a {
+    color: #171717;
+    margin: 0 25px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+
+.nav-item a::after {
+    content:"" ;
+    background-color: #AD5F5D;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+/*-- Final do menu --*/
+
+/*-- Início da responsividade --*/
+@media screen and (max-width: 1170px) {
+    .nav-list {
+        display: none
+    }
+
+    .mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 15px;
+        margin: 12px 0px;
+    }
+
+    .mobile-nav-list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+/*-- Final da responsividade --*/
+
+/*-- Início do rodapé --*/
+footer {
+    width: 100%;
+    background-color: #E8E8E8;
+    text-align: center;
+    z-index: 3;
+    position: sticky;
+    bottom: 0;
+    padding: 4px;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-media  {
+    font-size: 20px;
+    color: #AD5F5D;
+    text-decoration: none;
+    padding: 3px 12px;    
+}
+
+/*-- Início da animação dos ícones das redes sociais --*/
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.social-media:hover {
+    animation-name: anima;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: inherit;
+    animation-direction: initial;
+}
+/*-- Final da animação dos ícones das redes sociais --*/
+
+.copyright p {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+/*-- Final do rodapé --*/
