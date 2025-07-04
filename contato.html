@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Início dos metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com Fulana de Tal, engenheira civil, para orçamentos, dúvidas ou parcerias profissionais.">
+    <meta name="keywords" content="Orçamento, Atendimento">
+    <meta name="author" content="Jeanine R. M. da Silva Pereira">
+    <!-- Final dos metadados -->
+
+    <!-- Início dos links css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/styles/geral.css">
+    <link rel="stylesheet" href="./src/styles/contato.css">
+    <!-- Final dos links css -->
+
+    <!-- Título -->
+    <title>Portfólio</title>
+
+    <!-- Link do ícone do navegador -->
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon"/>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <!-- Início do cabeçalho -->
+    <header>
+
+        <nav class="nav-bar">
+            <img src="./src/images/logo.png" alt="Imagem da logo">
+
+            <ul class="nav-list">
+                <li class="nav-item active">
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="projetos.html">Projetos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+
+            <button class="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        
+        <div class="mobile-menu">
+
+            <ul class="mobile-nav-list">
+                <li class="nav-item active">
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="projetos.html">Projetos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
+    <!-- Final do cabeçalho -->
+
+    <!-- Início da seção principal -->
+    <main>
+    
+        <div class=contato>
+            <!-- Informações de contato -->
+            <div class="left-side">
+                <h1 class="texto">CONTATO</h1>
+
+                <div>
+                    <i class="fa fa-map-marker-alt"></i>
+                    <p>Avenida República Argentina, 1234, Centro<br>
+                        Foz do Iguaçu, Paraná, CEP 85600-000</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>fulanadetal@gmail.com</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+55 (45) 9967-8989</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+55 (45) 9953-2367</p>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <!-- Formulário de contato -->
+                <form id="form" class="form">
+
+                    <fieldset>
+
+                        <div class="form-content">
+                            <label for="username">Nome:</label>
+                            <input type="text" id="username" name="username" autocomplete="off">
+                            <a>Mensagem de erro....</a>
+                        </div>
+
+                        <div class="form-content">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" autocomplete="off">
+                            <a>Mensagem de erro....</a>
+                        </div>
+
+                        <div class="form-content">
+                            <label for="tel">Telefone:</label>
+                            <input type="tel" id="tel" name="tel" autocomplete="off">
+                            <a>Mensagem de erro....</a>
+                        </div>
+
+                        <div class="form-content">
+                            <label for="message">Digite sua mensagem:</label>
+                            <textarea id="message" name="message" rows="5" cols="50"></textarea>
+                            <a>Mensagem de erro....</a>
+                        </div>
+
+                        <div class="aviso">
+                            <button type="submit">Enviar mensagem</button>
+                        </div> 
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+                
+        </div>
+
+    </main>
+    <!-- Final da seção principal -->
+
+    <!-- Início do rodapé -->
+    <footer class="footer">
+
+        <div clas=" container">
+
+            <div class="redes-sociais">
+                <a href="#" class="social-media">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="#" class="social-media">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="#" class="social-media">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-media">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Jeanine R. M. da Silva Pereira.Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+    <!-- Final do rodapé -->
+
+    <!-- javascript -->
+    <script src="./src/javascript/script.js"></script>
+    
+</body>
+
+</html>
